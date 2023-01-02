@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-gl = "0.14.0"
+gl = { path = "lib/gl" }
 
 [dependencies.sdl2]
 version = "0.35"
@@ -18,3 +18,6 @@ rev = "261c458af6e3eed5d099144aff95d2b5035f656b"
 
 [package.metadata.vcpkg.target]
 x86_64-pc-windows-msvc = { triplet = "x64-windows-static-md" }
+
+[features]
+gl_debug = ["gl/debug"]

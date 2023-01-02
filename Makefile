@@ -5,4 +5,4 @@ release:
 	cargo build --release
 
 run:
-	cargo run
+	cargo run --features "gl_debug"
